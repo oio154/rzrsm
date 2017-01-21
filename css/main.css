@@ -1,9 +1,16 @@
- body {
-     font-size: 12px;
+html{font-size: 15px;}
+@media only screen and (min-width: 1700px){ html{font-size: 31px;}}
+
+
+
+body {
+      
      width: 100%;
 /*     font-family: 'Lato', sans-serif;*/
      font-family: 'Open Sans', serif;
  }
+
+
 
 .lato {font-family: 'Lato', sans-serif;}
  
@@ -69,7 +76,7 @@
 }
 
 .menu-li a {
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Open Sans', serif;
@@ -141,6 +148,7 @@ padding: 8px 0 8px 0;
     position: absolute;
     top: 0;
     left: 0;
+    height: 14.2vw;
 }
 .news-one h1 {
     position: absolute;
@@ -168,6 +176,11 @@ padding: 8px 0 8px 0;
 }
 
 }
+
+
+.fill-w{height:14.2vw;}
+.fill-h{width:14.2vw;}
+
 
 /* <700 */
 

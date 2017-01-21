@@ -38,11 +38,11 @@
    
     
     <div class="news">
-        <div class="news-one"><img class="news-image" src="http://lorempixel.com/160/167/nightlife" /><h1>Wielka uroczystość.</h1></div>
-        <div class="news-one"><img class="news-image" src="http://lorempixel.com/260/266/nature" /><h1>Rodzinny zjazd spółdzielni mieszkaniowych.</h1></div>
+        <div class="news-one"><img class="news-image" src="http://lorempixel.com/160/50/nightlife"  /><h1>Wielka uroczystość.</h1></div>
+        <div class="news-one"><img class="news-image" src="http://lorempixel.com/50/160/nature" /><h1>Rodzinny zjazd spółdzielni mieszkaniowych.</h1></div>
         <div class="news-one"><img class="news-image" src="http://lorempixel.com/165/165/people" /><h1>Zmiany we władzach Związku</h1></div>
         <div class="news-one"><img class="news-image" src="http://lorempixel.com/166/164/sports" /><h1>Zawody na koniec roku</h1></div>
-        <div class="news-one"><img class="news-image" src="http://lorempixel.com/163/163/" /><h1>Przykłądowy bardzo długi tytuł newsa do sprawdzenia okna tytułowego w którym tekst może się nie zmieścić w całości.</h1></div>
+        <div class="news-one"><img class="news-image" src="http://lorempixel.com/1630/1630/" /><h1>Przykłądowy bardzo długi tytuł newsa do sprawdzenia okna tytułowego w którym tekst może się nie zmieścić w całości.</h1></div>
         <!--div class="news-one"><img class="news-image" src="http://lorempixel.com/164/164/" />oosk</div>
         <div class="news-one"><img class="news-image" src="http://lorempixel.com/168/168/" />odoo</div>
         <div class="news-one"><img class="news-image" src="http://lorempixel.com/166/167/" />pldo</div>
@@ -52,8 +52,25 @@
         <div class="news-one"><img class="news-image" src="http://lorempixel.com/168/163/" />pldo</div-->
     </div>
         
-        
-        txt
+       <script>
+            
+            function fillImage(image){
+            if(image.naturalWidth>image.naturalHeight) image.classList.add('fill-w'); else image.classList.add('fill-h');
+            
+        }
+           
+//onload="fillImage(this)"
+           
+           const images = document.querySelectorAll('.news-image');
+           
+           
+           Array.from(images).forEach( image => image.addEventListener('load',function(){  fillImage(image);  }));
+           
+           
+           
+           
+        </script> 
+    
 </body>
 <!--
 
