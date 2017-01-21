@@ -1,0 +1,50 @@
+ body{font-size: 12px; width: 100%; font-family: 'Lato', sans-serif;}
+        *{margin: 0; border: 0; padding: 0; box-sizing: content-box;}
+        
+        .hd-part1{background: #1d5892; position: relative;}
+        .hd-part1 .hd-image-logo {position: absolute; top: 1vw; left: 2vw; width: 28vw;}
+        .hd-part1 .hd-image{display: block; width: 100vw;}
+        .hd-part1 .hd-div-right{position: absolute; width: 20vw; right: 1vw; top: 1vw; color: white; text-align: right; font-size: 1.3rem;} 
+        
+        .hd-part2{background: #1d5892; margin-top: 3px; width: 100%; text-align: center; font-size: 0;  }
+        
+        /*menu*/
+        
+        @media only screen and (max-device-width: 700px){.hd-part2 * {display: block;}}
+        @media only screen and (min-device-width: 700px){
+            .hd-part2 * {display: inline-block;}
+            .hd-part2 li::after {
+                
+content: "";
+                
+box-shadow: inset 0px .3rem .2rem 0px #1d5892 ,  inset 0px -.3rem .2rem 0px #1d5892;
+                
+display: inline-block;
+                
+height: 2rem;
+                
+width: 2px;
+                
+background: white;
+                
+position: relative;
+                
+top: .5rem;
+                
+}
+            .hd-part2 li:last-child::after {display: none;}
+        }
+        
+        .menu-ul{  list-style: none; margin: 0 auto;  }
+        .menu-ul li {color: #FFD700;transition: color ease .6s, background-color ease .6s;font-size: 1.1rem;white-space: nowrap;text-transform: uppercase;}
+        .menu-ul a {text-decoration: none; color: inherit;  padding: .5rem .7rem;}
+        
+        .gold-on-gold {
+   text-shadow: rgba(0,0,0,0.1) -1px 0, rgba(0,0,0,0.1) 0 -1px, rgba(255,255,255,0.1) 1px 0, rgba(255,255,255,0.1) 0 1px, rgba(0,0,0,0.1) -1px -1px, rgba(255,255,255,0.1) 1px 1px;
+   /* color: gold; */
+}
+        
+        .menu-ul li:hover {color: #fdfdfd;}
+        
+        .nobr { white-space: nowrap;}
+    
